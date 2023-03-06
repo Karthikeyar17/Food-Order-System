@@ -1,0 +1,40 @@
+<app-header></app-header>
+<div class="container-fluid h-100">
+  <div class="row h-100 justify-content-center align-items-center">
+    <div class="col-md-6 col-lg-4">
+      <div class="card shadow">
+        <div class="card-body px-5">
+          <div class="text-center">
+            <h1>Sign Up</h1><br>
+            <h5>"Join our foodie family today !"</h5>
+          </div>
+          <form [formGroup]="SignUpForm" (ngSubmit)="onSubmit()">
+
+            <div class="form-group">
+              <input type="text" id="name" placeholder="Name" class="form-control" formControlName="name" name="name" required />
+            </div>
+            <br>
+            <div class="form-group">
+              <input type="tel" id="mobile" placeholder="Mobile Number" class="form-control" formControlName="mobile" name="mobile" required />
+            </div>
+            <br>
+            <div class="form-group">
+              <input type="email" id="email" placeholder="Email" class="form-control" formControlName="email" name="email" required />
+            </div>
+            <br>
+            <div class="form-group">
+              <input type="password" id="password" placeholder="Password" class="form-control" formControlName="password" name="password" required />
+            </div>
+            <br>
+            <div class="form-group">
+              <input type="password" id="confirm-password" placeholder="Confirm Password" class="form-control" formControlName="confirmPassword" name="confirmPassword" required />
+            </div>
+            <br>
+            <button type="submit" class="btn btn-primary w-100">Sign Up</button>
+          </form>
+          <button class="btn btn-secondary" routerLink="/" style="display: block; margin: 0 auto;">Home</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

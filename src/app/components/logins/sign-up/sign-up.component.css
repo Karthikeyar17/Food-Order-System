@@ -1,0 +1,55 @@
+/* Center the form vertically and horizontally */
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+/* Style the form */
+form {
+  background-color: #f7f7f7;
+  padding: 30px;
+  border-radius: 5px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+  width: 400px;
+}
+
+h2 {
+  font-size: 24px;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+/* Style the input fields */
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="password"] {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: none;
+  border-radius: 3px;
+  background-color: #e6e6e6;
+  font-size: 16px;
+  color: #333;
+}
+button[type="submit"] {
+  background-color: blue;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 3px;
+  font-size: 16px;
+  cursor: pointer;
+}
+button[type="submit"]:hover {
+  background-color: blue;
+}
+.btn{
+  color: whitesmoke;
+  background-color: royalblue;
+  width: 30%;
+
+}
